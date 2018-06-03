@@ -1,0 +1,34 @@
+{
+    "name": "baymax-umasou/images-upload",
+    "description": "solve images upload to laravel and save image path to databases",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Baymax",
+            "email": "baymaxrice@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BaymaxRice\\FilesUpload\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BaymaxRice\\FilesUpload\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BaymaxUmasou\\FilesUpload\\FilesUploadServiceProvider"
+            ],
+            "aliases": {
+                "Upload": "BaymaxUmasou\\FilesUpload\\FilesUploadFacade"
+            }
+        }
+    }
+}
