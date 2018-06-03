@@ -11,12 +11,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "BaymaxRice\\FilesUpload\\": "src/"
+            "BaymaxUmasou\\FilesUpload\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BaymaxRice\\FilesUpload\\Tests\\": "tests/"
+            "BaymaxUmasou\\FilesUpload\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",
@@ -25,10 +25,7 @@
         "laravel": {
             "providers": [
                 "BaymaxUmasou\\FilesUpload\\FilesUploadServiceProvider"
-            ],
-            "aliases": {
-                "Upload": "BaymaxUmasou\\FilesUpload\\FilesUploadFacade"
-            }
+            ]
         }
     }
 }
